@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Custom CSS for responsive image heights -->
+    <style>
+        
+    </style>
+    
+    <script src="js/script.js"></script>
+    <title>Mediatiobona</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <!-- Mobile menu button - left side -->
+            <button class="navbar-toggler d-sm-none order-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Logo - hidden on mobile, shown on tablet+ -->
+            <a class="navbar-brand d-none d-sm-block order-1" href="#">
+                <img src="img/logo.png" alt="Mediatiobona Logo">
+            </a>
+            
+            <!-- Language switcher - always visible, right side on mobile -->
+            <div class="dropdown d-sm-none order-2">
+                <button class="btn btn-outline-secondary dropdown-toggle btn-sm" type="button" id="languageDropdownMobile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentLangMobile">PL</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdownMobile">
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('pl')">Polski</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('it')">Italiano</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('ru')">Русский</a>
+                    <a class="dropdown-item" href="#" onclick="changeLanguage('uk')">Українська</a>
+                </div>
+            </div>
+            
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse order-3" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-translate="naglowek1">O mnie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" data-translate="naglowek2">Działalność</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-translate="naglowek3">Kontakt</a>
+                    </li>
+                </ul>
+                
+                <!-- Language switcher for tablet+ -->
+                <div class="dropdown d-none d-sm-block">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="currentLang">PL</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('pl')">Polski</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('it')">Italiano</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('ru')">Русский</a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('uk')">Українська</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-12">
+                    <img src="img/LandingImg.png" alt="Mediatiobona Landing Image" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content text-center">
+                        <h1 class="main-title" data-translate="tekst1">Mediator Michał Frąckowiak</h1>
+                        <h2 class="subtitle" data-translate="tekst2">MEDIACJE I NEGOCJACJE MIĘDZYNARODOWE</h2>
+                        <p class="description" data-translate="tekst3">Moje ponad dwudziestoletnie doświadczenie w mediacjach i negocjacjach międzynarodowych...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-translate="mediacja">DOBRA MEDIACJA (MEDIATIO BONA) TO NAJSKUTECZNIEJSZY, NAJTRWALSZY, NAJLEPSZY I NAJTAŃSZY SPOSÓB ROZWIĄZYWANIA NAWET BARDZO TRUDNYCH I ZŁOŻONYCH KONFLIKTÓW.</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Mediacja cywilna -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <h3 data-translate="mediacja1">Mediacje cywilne</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 data-translate="mediacja1">Mediacje cywilne</h3>
+                                <ul class="mediation-list">
+                                    <li data-translate="mediacja1opis1">o zapłatę</li>
+                                    <li data-translate="mediacja1opis2">o rozwiązanie lub niewykoananie umowy</li>
+                                    <li data-translate="mediacja1opis3">Ochrona dóbr osobistych</li>
+                                    <li data-translate="mediacja1opis4">Ochrona praw autorskich</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mediacja gospodarczo-biznesowa -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <h3 data-translate="mediacja2">Mediacje gospodarczo-biznesowe</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 data-translate="mediacja2">Mediacje gospodarczo-biznesowe</h3>
+                                <ul class="mediation-list">
+                                    <li data-translate="mediacja2opis1">o zapłatę z tytułu wykonania umów</li>
+                                    <li data-translate="mediacja2opis2">o ustalenie odszkodowania</li>
+                                    <li data-translate="mediacja2opis3">wewnątrz kadry zarządzającej</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mediacja pracownicza -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3 data-translate="mediacja3">Mediacje pracownicze</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 data-translate="mediacja3">Mediacje pracownicze</h3>
+                                <ul class="mediation-list">
+                                    <li data-translate="mediacja3opis1">Dyskryminacja</li>
+                                    <li data-translate="mediacja3opis2">Mobbing w miejscu pracy</li>
+                                    <li data-translate="mediacja3opis3">Godziny nadliczbowe i wynagrodzenia</li>
+                                    <li data-translate="mediacja3opis4">Rozwiązanie umowy o pracę</li>
+                                    <li data-translate="mediacja3opis5">Odszkodowania lub zadośćuczynienia</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mediacja międzynarodowa -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h3 data-translate="mediacja4">Mediacje i negocjacje międzynarodowe</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 data-translate="mediacja4">Mediacje i negocjacje międzynarodowe</h3>
+                                <ul class="mediation-list">
+                                    <li data-translate="mediacja4opis1">Szkolenia przygotowujące do negocjacji</li>
+                                    <li data-translate="mediacja4opis2">Przygotowanie specyfiki negocjacyjnej</li>
+                                    <li data-translate="mediacja4opis3">Zarządzanie procesem negocjacji międzynarodowych</li>
+                                    <li data-translate="mediacja4opis4">Mediacja transgraniczna</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Komparastyka prawnicza -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="card-icon">
+                                    <i class="fas fa-gavel"></i>
+                                </div>
+                                <h3 data-translate="mediacja5">Komparastyka prawnicza</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3 data-translate="mediacja5">Komparastyka prawnicza</h3>
+                                <ul class="mediation-list">
+                                    <li data-translate="mediacja5opis1">Porównanie poszczególnych zapisów prawa polskiego z rozwiązaniami w innych krajach</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="contact-content">
+                        <h2 class="contact-title" data-translate="kontakt1">Kontakt:</h2>
+                        <div class="email-container">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <a href="mailto:michalfrackowiak@mediatiobona.com" class="contact-email" data-translate="kontakt2">michalfrackowiak@mediatiobona.com</a>
+                        </div>
+                        <h3 class="contact-welcome" data-translate="kontakt3">ZAPRASZAM</h3>
+                        <p class="contact-motto" data-translate="kontakt4">CITIUS LEVIUS MELIUS</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Simple Footer - same background, no gap -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="simple-footer">
+                        <hr class="footer-divider">
+                        <p class="footer-copyright">
+                            &copy; <span id="currentYear"></span> Mediatiobona - Michał Frąckowiak. 
+                            <span data-translate="footer_rights">Wszelkie prawa zastrzeżone.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Language switching functionality -->
+    <script>
+        // Set current year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.getElementById('currentYear');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
